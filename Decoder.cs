@@ -8,5 +8,9 @@ namespace JapanesePracticer
 {
     class Decoder
     {
+        public Decoder() {
+        }
+        
+        
     }
 }
