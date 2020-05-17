@@ -1,4 +1,4 @@
-data {
+const data = {
 	"\u3042": "a",
 	"\u3404": "i",
 	"\u3406": "u",
@@ -107,3 +107,5 @@ data {
 	"\u3074\u3085": "pyu",
 	"\u3074\u3087": "pyo",
 }
+
+export default data;
