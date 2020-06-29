@@ -1,0 +1,72 @@
+#header {
+	background-color: #dddddd;
+	margin: auto;
+}
+
+#main-div {
+	background-color: #ebe0c7;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+#maintitle {
+	text-align: center;
+	margin: auto;
+}
+
+.prompt-display {
+	text-align: center;
+	font-family: Arial;
+	font-size: 25px;
+	margin: auto;
+}
+
+.entry-elements {
+	border-radius: 10px; 
+	height: 30px;
+	
+	margin: auto;
+}
+
+#entry-field {
+	font-family: Arial;
+	font-size: 20px;
+	width: 400px;
+	min-width: 150px;
+	text-align: center;
+}
+
+.entry-div {
+	width: 400px;
+	margin: auto;
+}
+
+.button-div {
+	width: 140px;
+	margin: auto;
+}
+
+input:focus, input.form-control:focus {
+
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.def-div {
+	border-style: solid;
+	border-radius: 10px;
+	border-color: #f4f5eb;
+	border-width: 1px;
+	width: 800px;
+	height: 200px;
+	max-height: 200px;
+	margin: auto;
+	overflow: auto;
+}
+
+#footer {
+	background-color: #dddddd;
+}
