@@ -1,17 +1,18 @@
 
-import hData from "./hiragana.js";
-import kData from "./katakana.js";
+import data from "./kana.js";
 import decode from "./decoder.js";
 
 let dict;
 const requestURL = 'jmdict-eng-common-3.0.1/jmdict-eng-common-3.0.1.json';
 
 //put these in respective files
-const hSpecial = ["っ",{
+const special = ["っ",
+	{
 	"ゃ": true,
 	"ゅ": true,
-"ょ": true}, "ー"];
-const kSpecial = ["ッ",{
+	"ょ": true},
+	"ー",
+	"ッ",{
 	"ャ": true,
 	"ュ": true,
 	"ョ": true,
@@ -49,7 +50,7 @@ const getNewButtonPress = () => {
 	setKanaField(word[1]);
 	
 	//set romaji
-	romaji = hData[word[1][0]] ? decode(word[1],hData,hSpecial) : decode(word[1],kData,kSpecial);
+	romaji = decode(word[1],data,special);
 	
 	//get and set eng definition
 	const def = getDef(index);
